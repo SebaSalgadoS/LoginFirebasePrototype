@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLogin"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="100dp"
@@ -45,12 +45,13 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
+        android:id="@+id/buttonRegister"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/github_background"
         android:text="Register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

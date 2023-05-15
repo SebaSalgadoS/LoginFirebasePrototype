@@ -13,7 +13,7 @@ import com.sebasalgado.loginfirebaseprototype.databinding.FragmentLoginBinding
 
 class FragmentHome : Fragment() {
 
-    //private val binding by lazy { FragmentHomeBinding.inflate(layoutInflater) }
+    private val binding by lazy { FragmentHomeBinding.inflate(layoutInflater) }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,7 +25,7 @@ class FragmentHome : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        /*
+
         binding.buttonLogin.setOnClickListener {
             val action = FragmentHomeDirections.actionFragmentHomeToFragmentLogin()
             findNavController().navigate(action)
@@ -36,7 +36,7 @@ class FragmentHome : Fragment() {
             findNavController().navigate(action)
         }
 
-         */
+
 
     }
 }

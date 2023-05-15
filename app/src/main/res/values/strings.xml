@@ -2,4 +2,24 @@
     <string name="app_name">Login Firebase Prototype</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Home Screen layout -->
+    <string name="logo_description_home">Logo Application</string>
+    <string name="btn_login">Sign In</string>
+    <string name="btn_register">Register</string>
+
+    <!-- Login Screen layout -->
+    <string name="username_text">Username or email</string>
+    <string name="password_text">Password</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="sign_in_button_text">Sign in</string>
+    <string name="google_logo">Google Logo</string>
+    <string name="facebook_logo">Facebook logo</string>
+
+    <!-- Register Screen layout -->
+    <string name="username_register_text">Username</string>
+    <string name="email_register_text">Email</string>
+    <string name="password_register_text">Password</string>
+    <string name="repite_password_register_text">Repite Password</string>
+    <string name="sign_up">Sign Up</string>
+
 </resources>

@@ -21,5 +21,7 @@
     <string name="password_register_text">Password</string>
     <string name="repite_password_register_text">Repite Password</string>
     <string name="sign_up">Sign Up</string>
+    <string name="icon_toolbar">Icono toolbar</string>
+    <string name="home">"Home "</string>
 
 </resources>

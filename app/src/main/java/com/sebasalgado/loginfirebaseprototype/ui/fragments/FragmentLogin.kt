@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.sebasalgado.loginfirebaseprototype.R
 import com.sebasalgado.loginfirebaseprototype.databinding.FragmentLoginBinding
 
 class FragmentLogin : Fragment() {
@@ -15,7 +14,7 @@ class FragmentLogin : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         return binding.root
     }
 

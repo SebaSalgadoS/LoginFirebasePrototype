@@ -10,7 +10,7 @@ class ValidateLoginInputTest {
 
     @Test
     fun testEmptyFieldReturnsValidationTypeEmptyField() {
-        val result = validateLoginInputUseCase(email = "", password = "password")
+        val result = validateLoginInputUseCase("", "password")
         assertEquals(result, LogingInputValidationType.EmplyField)
     }
 

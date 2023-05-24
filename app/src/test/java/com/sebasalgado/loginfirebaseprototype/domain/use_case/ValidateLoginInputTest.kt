@@ -16,19 +16,19 @@ class ValidateLoginInputTest {
 
     @Test
     fun testEmptyPasswordFieldReturnsValidationTypeEmptyField() {
-        val result = validateLoginInputUseCase("corre@gmail.com", "")
+        val result = validateLoginInputUseCase("pepito@gmail.com", "")
         assertEquals(result, LogingInputValidationType.EmplyField)
     }
 
     @Test
     fun testNoEmailFieldReturnsTrueValidationTypeNoEmailField() {
-        val result = validateLoginInputUseCase("correogmail.com", "password")
+        val result = validateLoginInputUseCase("pepitogmail.com", "password")
         assertEquals(result, LogingInputValidationType.NoEmail)
     }
 
     @Test
     fun testValidFieldReturnsValidationTypeField() {
-        val result = validateLoginInputUseCase("correo@gmail.com", "password")
+        val result = validateLoginInputUseCase("pepito@gmail.com", "password")
         assertEquals(result, LogingInputValidationType.Valid)
     }
 

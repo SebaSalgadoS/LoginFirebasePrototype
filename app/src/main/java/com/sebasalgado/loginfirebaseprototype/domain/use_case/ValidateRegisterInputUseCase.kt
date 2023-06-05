@@ -3,9 +3,7 @@ package com.sebasalgado.loginfirebaseprototype.domain.use_case
 import com.sebasalgado.loginfirebaseprototype.domain.model.RegisterInputValidationType
 import com.sebasalgado.loginfirebaseprototype.utils.constants.EMAIL_CHARATER
 import com.sebasalgado.loginfirebaseprototype.utils.constants.MIN_PASS_LENGTH
-import com.sebasalgado.loginfirebaseprototype.utils.extentions.constainsSpecialChar
-import com.sebasalgado.loginfirebaseprototype.utils.extentions.constainsUpperCase
-import com.sebasalgado.loginfirebaseprototype.utils.extentions.containsNumbers
+import com.sebasalgado.loginfirebaseprototype.utils.extentions.*
 
 class ValidateRegisterInputUseCase {
 
@@ -29,10 +27,10 @@ class ValidateRegisterInputUseCase {
         if (!password.containsNumbers()) {
             return RegisterInputValidationType.PasswordNumberMissing
         }
-        if (!password.constainsUpperCase()) {
+        if (!password.containsUpperCase()) {
             return RegisterInputValidationType.PasswordUpperCaseMissing
         }
-        if (!password.constainsSpecialChar()) {
+        if (!password.containsSpecialChar()) {
             return RegisterInputValidationType.PasswordSpecialCharMissing
         }
         return RegisterInputValidationType.Valid

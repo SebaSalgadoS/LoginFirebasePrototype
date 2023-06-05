@@ -5,12 +5,12 @@ fun String.containsNumbers(): Boolean{
     return regex.matches(this)
 }
 
-fun String.constainsUpperCase(): Boolean{
+fun String.containsUpperCase(): Boolean{
     val regex = Regex(".*[A-Z]+.*")
     return regex.matches(this)
 }
 
-fun String.constainsSpecialChar(): Boolean{
+fun String.containsSpecialChar(): Boolean{
     val regex = Regex(".*[^A-Za-z\\d]+.*")
     return regex.matches(this)
 }

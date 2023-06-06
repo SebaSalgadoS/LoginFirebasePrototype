@@ -1,7 +1,6 @@
 package com.sebasalgado.loginfirebaseprototype.domain.use_case
 
 import com.sebasalgado.loginfirebaseprototype.domain.model.RegisterInputValidationType
-import com.sebasalgado.loginfirebaseprototype.utils.constants.EMAIL_CHARATER
 import com.sebasalgado.loginfirebaseprototype.utils.constants.MIN_PASS_LENGTH
 import com.sebasalgado.loginfirebaseprototype.utils.extentions.*
 
@@ -15,7 +14,7 @@ class ValidateRegisterInputUseCase {
         if (email.isEmpty() || password.isEmpty() || passwordRepeated.isEmpty()) {
             return RegisterInputValidationType.EmptyField
         }
-        if (EMAIL_CHARATER !in email) {
+        if (email.isEmail()) {
             return RegisterInputValidationType.NoEmail
         }
         if (password != passwordRepeated) {

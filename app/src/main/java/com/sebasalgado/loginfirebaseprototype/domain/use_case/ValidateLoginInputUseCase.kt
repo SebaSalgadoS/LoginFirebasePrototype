@@ -1,7 +1,7 @@
 package com.sebasalgado.loginfirebaseprototype.domain.use_case
 
 import com.sebasalgado.loginfirebaseprototype.domain.model.LogingInputValidationType
-import com.sebasalgado.loginfirebaseprototype.utils.constants.EMAIL_CHARATER
+import com.sebasalgado.loginfirebaseprototype.utils.extentions.isEmail
 
 class ValidateLoginInputUseCase {
 
@@ -9,7 +9,7 @@ class ValidateLoginInputUseCase {
         if (email.isEmpty() || password.isEmpty()) {
             return LogingInputValidationType.EmplyField
         }
-        if (EMAIL_CHARATER !in email) {
+        if (email.isEmail()) {
             return LogingInputValidationType.NoEmail
         }
         return LogingInputValidationType.Valid

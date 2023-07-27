@@ -5,6 +5,8 @@ import com.sebasalgado.loginfirebaseprototype.utils.extentions.isEmail
 
 class ValidateLoginInputUseCase {
 
+    //TODO: agregar caso de que tenga mas de 6 cartacteres
+
     operator fun invoke(email: String, password: String): LogingInputValidationType {
         if (email.isEmpty() || password.isEmpty()) {
             return LogingInputValidationType.EmplyField
